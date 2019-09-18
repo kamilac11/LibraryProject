@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginPageComponent } from './login-page/login-page.component';
-import { BookDataComponent } from './book-data/book-data.component';
-import { UserBookListComponent } from './user-book-list/user-book-list.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
+import { BookDataComponent } from './components/book-data/book-data.component'
+import { UserBookListComponent } from './components/user-book-list/user-book-list.component';
 
 
 const routes: Routes = [

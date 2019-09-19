@@ -1,1 +1,38 @@
 <p>book-data works!</p>
+
+<!-- <div class="mat-elevation-z8 book-data">
+    <mat-table #table [dataSource]="bookService.books">
+        <ng-container matColumnDef="book.id">
+            <mat-header-cell *matHeaderCellDef> Id </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="book.title">
+            <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+        </ng-container>
+
+</div> -->
+
+<div class="container">
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Identyfikator</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let ksiazka of bookTest">
+                    <td>{{ksiazka.id}}</td>
+                    <td>{{ksiazka.title}}</td>
+                    <td>{{ksiazka.author}}</td>
+                    <td>{{ksiazka.year}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

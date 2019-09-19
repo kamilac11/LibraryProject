@@ -7,11 +7,14 @@ export class Book {
     author: string;
     year: number;
 
+constructor() {
+    
+}
 
-    constructor(id: number, title: string, author: string, year: number){
-        this.id = id;
-        this.title = title;
-        this.author = author;
-        this.year = year;
-    }
+    //constructor(id: number, title: string, author: string, year: number){
+    //     this.id = id;
+    //     this.title = title;
+    //     this.author = author;
+    //     this.year = year;
+    // }
 }

@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    padding: 15%;
+    display: inline-block;
+}
+
+
+/* .form-signin {
+    width: 100%;
+    text-align: center;
+} */
+
+.class1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 15px;
+}
+
+body {
+    background-image: url("https://www.rd.com/wp-content/uploads/2017/11/How-Much-Does-a-Book-Need-to-Sell-to-Be-a-Bestseller-509582812-Billion-Photos-1024x683.jpg");
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+}
+
+.form-group {
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+input {
+    width: 300px;
+}

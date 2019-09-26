@@ -1,5 +1,3 @@
-<p>book-data works!</p>
-
 <!-- <div class="mat-elevation-z8 book-data">
     <mat-table #table [dataSource]="bookService.books">
         <ng-container matColumnDef="book.id">
@@ -13,7 +11,30 @@
 
 </div> -->
 
+<!-- <h1>Available books</h1> -->
+
+
 <div class="container">
+    <h1>Available books</h1>
+    <div class="images">
+        <button name="lecture.png" (click)=getName()>
+            <img src="./assets/img/lecture.png" width="100" height="100">
+        </button>
+        <button name="notebook.png">
+        <img src="./assets/img/notebook.png" width="100" height="100">
+        </button>
+        <button name="painting-palette.png">
+            <img src="./assets/img/painting-palette.png" width="100" height="100">
+        </button>
+        <button name="workspace.png">
+            <img src="./assets/img/workspace.png" width="100" height="100">
+        </button>
+
+
+
+    </div>
+
+
     <div class="row">
         <table class="table table-striped">
             <thead>
@@ -22,14 +43,16 @@
                     <th scope="col">Title</th>
                     <th scope="col">Author</th>
                     <th scope="col">Year</th>
+                    <th scope="col">Cover</th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let ksiazka of bookTest">
+                <tr *ngFor="let ksiazka of bookData">
                     <td>{{ksiazka.id}}</td>
                     <td>{{ksiazka.title}}</td>
                     <td>{{ksiazka.author}}</td>
                     <td>{{ksiazka.year}}</td>
+                    <td>{{ksiazka.cover}}</td>
                 </tr>
             </tbody>
         </table>

@@ -6,8 +6,8 @@ import { UserBookListComponent } from './components/user-book-list/user-book-lis
 
 
 const routes: Routes = [
-  { path: 'registration', component: LoginPageComponent },
-  { path: '', redirectTo: '/registration', pathMatch: 'full' },
+  { path: 'home', component: LoginPageComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'book', component: BookDataComponent },
   { path: 'user-account', component: UserBookListComponent }
 ];

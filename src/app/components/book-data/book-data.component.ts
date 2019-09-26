@@ -16,15 +16,22 @@ export class BookDataComponent implements OnInit {
 
   //dataSource = bookService.
   //books = new MatTableDataSourceource();
-  bookTest: Book[] = new Array();
+  bookData: Book[] = new Array();
 
   ngOnInit() {
     this.bookService.getBooks().subscribe(value => {
-      this.bookTest = value;
+      this.bookData = value;
       console.log(value);
     })
-    
 
+  }
+
+
+
+
+  getName(name: string){
+    // var x = button.getElementById("")
+    console.log(name)
   }
 
 }

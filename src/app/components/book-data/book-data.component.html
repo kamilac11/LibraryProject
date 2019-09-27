@@ -17,16 +17,16 @@
 <div class="container">
     <h1>Available books</h1>
     <div class="images">
-        <button name="lecture.png" (click)=getName()>
+        <button name="lecture.png" (click)="getNameTest(button1value.id, button1value.name)" #button1value id="button1value">
             <img src="./assets/img/lecture.png" width="100" height="100">
         </button>
-        <button name="notebook.png">
+        <button name="notebook.png" (click)="getNameTest(button2value.id, button2value.name)" #button2value id="button2value">
         <img src="./assets/img/notebook.png" width="100" height="100">
         </button>
-        <button name="painting-palette.png">
+        <button name="painting-palette.png" (click)="getNameTest(button3value.id, button3value.name)" #button3value id="button3value">
             <img src="./assets/img/painting-palette.png" width="100" height="100">
         </button>
-        <button name="workspace.png">
+        <button name="workspace.png" (click)="getNameTest(button4value.id, button4value.name)" #button4value id="button4value">
             <img src="./assets/img/workspace.png" width="100" height="100">
         </button>
 

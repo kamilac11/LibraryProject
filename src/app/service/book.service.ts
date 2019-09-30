@@ -13,4 +13,12 @@ export class BookService {
   getBooks(): Observable<Book[]>{
     return this.http.get<Book[]>('http://localhost:8080/books');
 }
+
+
+  postBooksByCover(cover: String[]): Observable<Book[]>{
+    return this.http.post<Book[]>('http://localhost:8080/books/cover', cover)
+  }
+
+
+
 }

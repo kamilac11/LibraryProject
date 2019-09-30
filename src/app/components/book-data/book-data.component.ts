@@ -27,7 +27,7 @@ export class BookDataComponent implements OnInit {
     this.bookService.getBooks().subscribe(value => {
       this.bookData = value;
       console.log(value);
-      //this.bookList.push(this.getNameTest()
+     // this.bookList.push(this.getNameTest());
     })
 
   }
@@ -35,28 +35,38 @@ export class BookDataComponent implements OnInit {
 
   getNameTest(lbl, val){
     //document.getElementById(lbl).innerHTML = val;
-    console.log(val);
+    //console.log(val); //zwraca nazwe przycisku ktory zostal klikniety
     if(this.bookList.indexOf(val)===-1){
       this.bookList.push(val)
+      
     }
-   // this.bookList.push(val);
     console.log(this.bookList)
+    this.bookService.postBooksByCover(this.bookList);
+    return this.bookList;
+    //console.log(this.bookList)
   }
 
-  onClickTest(){
-    this.number=1;
-    console.log(this.number);
+  
+  //zwraca liste wybranych ikon 
+  testClick(){
+    console.log(this.bookList);
   }
 
-  onClick1(){
-    this.clickedColumn = "lecture.png";
-    console.log(this.clickedColumn);
-  }
+  
+  // onClickTest(){
+  //   this.number=1;
+  //   console.log(this.number);
+  // }
 
-  onClick2(){
-    this.clickedColumn = "lecture.png";
-    console.log(this.clickedColumn);
-  }
+  // onClick1(){
+  //   this.clickedColumn = "lecture.png";
+  //   console.log(this.clickedColumn);
+  // }
+
+  // onClick2(){
+  //   this.clickedColumn = "lecture.png";
+  //   console.log(this.clickedColumn);
+  // }
 
 
 

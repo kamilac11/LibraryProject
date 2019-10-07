@@ -10,13 +10,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MaterialModule } from 'src/material-module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     BookDataComponent,
-    UserBookListComponent
+    UserBookListComponent,
+    NavBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -13,20 +13,37 @@
 
 <!-- <h1>Available books</h1> -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Library App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
 
-<div class="container">
+<body>
+
+<header>
+<app-nav-bar></app-nav-bar>
+</header>
+
+    <div class="container text-center">
     <h1>Available books</h1>
     <div class="images">
-        <button name="lecture.png" (click)="getNameTest(button1value.id, button1value.name)" #button1value id="button1value">
+        <button name="lecture.png" (click)="getNameChosenPicture(button1value.id, button1value.name)" #button1value id="button1value">
             <img src="./assets/img/lecture.png" width="100" height="100">
         </button>
-        <button name="notebook.png" (click)="getNameTest(button2value.id, button2value.name)" #button2value id="button2value">
+        <button name="notebook.png" (click)="getNameChosenPicture(button2value.id, button2value.name)" #button2value id="button2value">
         <img src="./assets/img/notebook.png" width="100" height="100">
         </button>
-        <button name="painting-palette.png" (click)="getNameTest(button3value.id, button3value.name)" #button3value id="button3value">
+        <button name="painting-palette.png" (click)="getNameChosenPicture(button3value.id, button3value.name)" #button3value id="button3value">
             <img src="./assets/img/painting-palette.png" width="100" height="100">
         </button>
-        <button name="workspace.png" (click)="getNameTest(button4value.id, button4value.name)" #button4value id="button4value">
+        <button name="workspace.png" (click)="getNameChosenPicture(button4value.id, button4value.name)" #button4value id="button4value">
             <img src="./assets/img/workspace.png" width="100" height="100">
         </button>
 
@@ -58,3 +75,8 @@
 
     </div>
 </div>
+</body>
+</html>
+
+
+

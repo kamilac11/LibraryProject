@@ -1,11 +1,30 @@
+
+body {
+    background-color: lightgray;
+  }
+
+
+.container {
+    position: relative;
+    flex: 1 0 auto;
+    margin: auto;
+    
+}
+
+
 h1 {
+    padding: 5%;
     text-align: center;
+    height: 15px;
+    color: green;
 }
 
 button {
-    padding: 5%;
+    padding: 0%;
+    background-color: blue;
 }
 
 img {
-    padding: 2%;
+    padding: 1%;
 }
+

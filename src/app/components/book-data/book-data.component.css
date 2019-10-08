@@ -1,4 +1,5 @@
 
+
 body {
     background-color: lightgray;
   }
@@ -21,7 +22,12 @@ h1 {
 
 button {
     padding: 0%;
-    background-color: blue;
+}
+
+#button1value{
+    background-image: url("C:/Users/Kamila/projektyAngular/wypozyczalniaKsiazek/LibraryProject/src/assets/img/lecture.png");
+    padding: 100px;
+    size: 40 px 40 px;
 }
 
 img {

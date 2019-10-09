@@ -31,6 +31,8 @@
 <app-nav-bar></app-nav-bar>
 </header>
 
+<div id="page-container">
+    <div id="content-wrap">
     <div class="container text-center">
     <h1>Available books</h1>
     <div class="images">
@@ -49,6 +51,19 @@
 
     </div>
     <button type="submit" (click)="testClick()">Submit</button>
+
+    <div class="wrapper">
+       <form>
+            <input type="image" src="./assets/img/lecture.png" class="form-img" id="img1">
+            <input type="image" src="./assets/img/notebook.png" class="form-img" id="img2">
+            <input type="image" src="./assets/img/painting-palette.png" class="form-img" id="img3">
+            <input type="image" src="./assets/img/workspace.png" class="form-img" id="img4">            
+
+       </form>
+    </div>
+
+
+
 
 
     <div class="row">
@@ -75,9 +90,10 @@
 
     </div>
 </div>
+</div>
 
 <app-footer></app-footer>
-
+</div>
 </body>
 </html>
 

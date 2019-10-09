@@ -27,7 +27,7 @@ img{
 
 .logoOnRight{
     float: right;
-    padding-right: 40px;
-    padding-left: 1250px;
+    right: 100px;
+    padding-left: 1255px;
 }
 

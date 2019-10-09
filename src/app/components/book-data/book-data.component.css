@@ -34,3 +34,46 @@ img {
     padding: 1%;
 }
 
+form{
+    display: grid;
+    grid-template-columns: 5px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 90vh;
+}
+
+#content-wrap {
+    padding-bottom: 0.5rem;    /* Footer height */
+}
+
+.wrapper{ 
+    display: grid;
+
+}
+
+.form-img{
+    width: 100px;
+    height: 100px;
+}
+
+#img1{
+    grid-column: col-start 1 ;
+    grid-row: 1;
+}
+
+#img2{
+    grid-column: col-start 2 ;
+    grid-row: 1;
+}
+
+#img3{
+    grid-column: col-start 3 ;
+    grid-row: 1;
+}
+
+#img4{
+    grid-column: col-start 4;
+    grid-row: 1;
+}

@@ -12,6 +12,7 @@ import { MaterialModule } from 'src/material-module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FormSubmitComponent } from './components/form-submit/form-submit.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BookDataComponent,
     UserBookListComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    FormSubmitComponent
   ],
   imports: [
     BrowserModule,

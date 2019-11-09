@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Book } from 'src/app/model/book';
 import { MatTableDataSource, getMatIconNameNotFoundError } from '@angular/material';
 import { BookService } from 'src/app/service/book.service';
+import { FormSubmitComponent } from '../form-submit/form-submit.component';
+
 
 @Component({
   selector: 'app-book-data',
@@ -10,7 +12,11 @@ import { BookService } from 'src/app/service/book.service';
 })
 export class BookDataComponent implements OnInit {
 
+
   constructor(private bookService: BookService) { }
+
+
+  wiadomosc = "HEllo WORLD!";
 
   clickedColumn: string;
   number: number;
@@ -48,7 +54,6 @@ export class BookDataComponent implements OnInit {
     //console.log(val); //zwraca nazwe przycisku ktory zostal klikniety
     if(this.bookList.indexOf(val)===-1){
       this.bookList.push(val)
-      
     }
     // console.log(this.bookList.toString());
     this.bookService.postBooksByCover(this.bookList); 
@@ -65,10 +70,6 @@ export class BookDataComponent implements OnInit {
 
   
 addBookToArray() {
-//switch?
-
-
-
   if(document.getElementById('button1').onclick && this.choosenBooks.includes('img1') == false ){
     this.choosenBooks.push('img1');
   }
@@ -96,17 +97,33 @@ addBookToArray() {
   // document.getElementById('button2').onclick = this.checkImg2;
   // document.getElementById('button3').onclick = this.checkImg3;
   // document.getElementById('button4').onclick = this.checkImg4;
-
-
-
   console.log(this.choosenBooks);
-
 }
+
+//-__niepoprawne bo funkcje podpianmy pod buttona i tutaj nalezaloby jeszcze sprawdzac czy konkretny button zostal klikniety
+checkImgClicked(){
+  if(this.choosenBooks.includes('img1')==false){
+    this.choosenBooks.push('img1');
+  }
+  else if (this.choosenBooks.includes('img2')==false){
+    this.choosenBooks.push('img2');
+  }
+  else if (this.choosenBooks.includes('img3')==false){
+    this.choosenBooks.push('img3');
+  }
+  else{
+    this.choosenBooks.push('img3');
+  }
+  console.log(this.choosenBooks);
+}
+
+//working
 
 checkImg1() {
   if(this.choosenBooks.includes('img1')==false){
     this.choosenBooks.push('img1');
   }
+  console.log(this.choosenBooks);
 }
 
 

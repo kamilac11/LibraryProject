@@ -22,7 +22,7 @@ img{
 }
 
 .navbar-brand{
-    float: right;
+    float: right;  /*wyrownanie do prawej elementu blokowego */
 }
 
 .logoOnRight{
